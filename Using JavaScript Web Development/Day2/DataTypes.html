@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+     <script>
+
+     //Data Type - Types of Data
+
+     //1. String ---> "Anythig inside double or single qutoes - Text"
+
+     var customername = "John"
+
+     //BuiltIn Methods are like features in programing lang - we can use directly
+     // typeof(Value)
+
+     console.log(typeof(customername))
+
+
+     //2 . Number - +ve , -ve , decimal Number
+     var age = 35.04
+
+     console.log( typeof(age)  )
+
+
+     //3 . Boolean  - true or false
+
+     var LoggedIn = true
+
+     var NetflixSub = false
+
+     console.log(typeof(LoggedIn) )
+
+     console.log(typeof(NetflixSub))
+
+
+     // Null - Nothing
+
+     var a = null;
+
+     console.log(typeof(a))
+
+     //Note : Due To the Bug in Js Data type of Null shows Object as Output
+
+
+     //undefined - When No Value is assigned
+     var b
+
+     console.log(typeof(b))
+
+
+
+     //DataType 2 - 
+
+     //Array - To STore Multiple Data of Different Data types as well, at the same thing 
+     //Symbol - [ ] Square Bracket
+     //Rule - Index No Starts with 0
+
+     var students = [ "John" , "Bob" , "Charlie" , true , 124 ]
+     console.log(students)
+
+     //Access The Data ArrayName[IndexNo]
+     console.log(students[1])
+     console.log(students[4])
+
+    
+     //Object - Collection of data
+     //Symbol - { } curly Bracket
+     //Rule -  (left)key:value(right) pair
+
+     var employee = {
+
+        //key:value
+        name:"Om" ,
+        email:"om@gmail.com",
+        id:11121 ,
+        working:true
+
+     }
+
+     //Access The Value in Object By using -  ObjectName.keyname
+     console.log(employee)
+
+     console.log(employee.id)
+
+
+     //Functions - To Do A Task.
+     // keyword - function
+     // Symbol - ()
+
+     //Task : Buiild BillCalucltor
+
+     function BillCalulator(){
+            //Body of Function - Instruction 
+               
+            var product1 = "Milk"
+            var product2 = "Bread"
+
+            var price1 = 100
+            var price2 = 50
+
+            var TotalBill = price1 + price2;
+
+            console.log("The Total Bill is "  , TotalBill)
+
+     }
+
+     BillCalulator()   //Calling Function 
+
+
+
+    </script>   
+</body>
+</html>
