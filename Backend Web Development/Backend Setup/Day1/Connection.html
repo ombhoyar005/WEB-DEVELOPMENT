@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form id="loginForm">
+          Name:<input type="text" id="name" required>
+          Email:<input type="email" id="email" required>
+          <button type="submit">Submit</button>
+    </form>
+
+    <p id="resMsg"></p>
+
+    <script>
+       document.getElementById('loginForm').addEventListener('submit' , function(event){
+
+            event.preventDefault()  //Avoid Reloading The PAge
+
+            name = document.getElementById('name').value
+            email = document.getElementById('email').value
+
+
+            //Connection with Backend- Reponse SYNTAX
+            // fetch('Backend Address APi- Method',{
+            //      method:'Method Name',
+            //      headers:{
+            //         'Content-Type':'application/json'
+            //      },
+
+            //      body:  Value of Data Whihc you want to send To Server {name , email}
+            // })
+
+       })
+
+
+     </script>   
+</body>
+</html>
